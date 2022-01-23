@@ -1,4 +1,5 @@
 import Header from './components/header/Header';
+import ProductInfo from './components/product-info/ProductInfo';
 
 import './app.scss';
 
@@ -6,7 +7,9 @@ function App() {
   return (
     <div>
       <Header />
-      <h1>wag1</h1>
+      <main className="container">
+        <ProductInfo />
+      </main>
     </div>
   );
 }
