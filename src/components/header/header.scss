@@ -1,0 +1,21 @@
+.header {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__button-hamburger {
+    transform: translateY(3px);
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__avatar {
+    max-width: 25px;
+  }
+}
