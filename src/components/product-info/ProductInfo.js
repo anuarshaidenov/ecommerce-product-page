@@ -1,27 +1,27 @@
 import './product-info.scss';
 
 const ProductInfo = () => (
-  <section>
-    <h4>Sneaker company</h4>
-    <h2>Fall Limited edition sneakers</h2>
-    <p>
-      These low profile sneakers are your perfect casual wear companion.
+  <section className="product-info">
+    <h4 className="product-info__company">Sneaker company</h4>
+    <h2 className="product-info__name">Fall Limited edition sneakers</h2>
+    <p className="product-info__description">
+      These low-profile sneakers are your perfect casual wear companion.
       Featuring a durable rubber outer sole, they will withstand everything the
       weather can offer.
     </p>
-    <div>
-      <div>
-        <span>$125.00</span>
-        <span>50%</span>
+    <div className="product-info__prices">
+      <div className="product-info__price-current">
+        <span className="product-info__price">$125.00</span>
+        <span className="product-info__sale">50%</span>
       </div>
-      <span>$250.00</span>
+      <span className="product-info__price-old">$250.00</span>
     </div>
-    <div>
-      <button>-</button>
+    <div className="product-info__quantity">
+      <button className="product-info__decrement">-</button>
       <span>3</span>
-      <button>+</button>
+      <button className="product-info__increment">+</button>
     </div>
-    <button>Add to cart</button>
+    <button className="product-info__add-btn">Add to cart</button>
   </section>
 );
 

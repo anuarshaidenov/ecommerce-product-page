@@ -1,0 +1,56 @@
+@use '../../styles/colors';
+
+.product-info {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  &__company {
+    font-size: 0.8rem;
+    color: colors.$color-orange;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__name {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    color: colors.$color-dark-grayish-blue;
+    line-height: 1.5;
+  }
+
+  &__prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__sale {
+    color: colors.$color-orange;
+    background-color: colors.$color-pale-orange;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+
+  &__price-old {
+    font-weight: 700;
+    text-decoration: line-through;
+    color: colors.$color-grayish-blue;
+  }
+}

@@ -1,7 +1,7 @@
 import Header from './components/header/Header';
 import ProductInfo from './components/product-info/ProductInfo';
 
-import './app.scss';
+import './styles/app.scss';
 
 function App() {
   return (

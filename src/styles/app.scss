@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1rem;
 }
 
 img {
@@ -13,8 +24,9 @@ img {
 button {
   background-color: transparent;
   border: none;
-  cursor: pointer;
   display: flex;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .container {
