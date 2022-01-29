@@ -1,5 +1,7 @@
 import './product-info.scss';
 
+import QuantityButton from '../quantityButton/QuantityButton';
+
 const ProductInfo = () => (
   <section className="product-info">
     <h4 className="product-info__company">Sneaker company</h4>
@@ -16,11 +18,7 @@ const ProductInfo = () => (
       </div>
       <span className="product-info__price-old">$250.00</span>
     </div>
-    <div className="product-info__quantity">
-      <button className="product-info__decrement">-</button>
-      <span>3</span>
-      <button className="product-info__increment">+</button>
-    </div>
+    <QuantityButton />
     <button className="product-info__add-btn">Add to cart</button>
   </section>
 );
