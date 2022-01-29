@@ -10,7 +10,10 @@ import Backdrop from '../backdrop/Backdrop';
 const Header = () => {
   const [menuOpen, setMenu] = useState(false);
 
-  const toggleMenu = () => setMenu(!menuOpen);
+  const toggleMenu = () => {
+    setMenu(!menuOpen);
+    document.body.classList.toggle('no-scroll');
+  };
 
   return (
     <header className="header container">
