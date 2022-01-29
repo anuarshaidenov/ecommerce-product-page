@@ -1,7 +1,9 @@
 import './primary-button.scss';
 
-const PrimaryButton = ({ children }) => (
-  <button className="primary-button">{children}</button>
+const PrimaryButton = ({ children, ...otherProps }) => (
+  <button className="primary-button" {...otherProps}>
+    {children}
+  </button>
 );
 
 export default PrimaryButton;

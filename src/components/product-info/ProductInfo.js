@@ -5,7 +5,7 @@ import PrimaryButton from '../primaryButton/PrimaryButton';
 import { ReactComponent as CartIcon } from '../../images/icon-cart-white.svg';
 
 const ProductInfo = () => (
-  <section className="product-info">
+  <section className="product-info container">
     <h4 className="product-info__company">Sneaker company</h4>
     <h2 className="product-info__name">Fall Limited edition sneakers</h2>
     <p className="product-info__description">
@@ -21,7 +21,7 @@ const ProductInfo = () => (
       <span className="product-info__price-old">$250.00</span>
     </div>
     <QuantityButton />
-    <PrimaryButton>
+    <PrimaryButton type="button">
       <CartIcon /> Add to Cart
     </PrimaryButton>
   </section>
