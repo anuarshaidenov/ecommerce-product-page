@@ -4,16 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: colors.$color-light-grayish-blue;
   border-radius: 10px;
-
-  &__increment,
-  &__decrement {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: colors.$color-orange;
-  }
 
   &__amount {
     font-weight: 700;

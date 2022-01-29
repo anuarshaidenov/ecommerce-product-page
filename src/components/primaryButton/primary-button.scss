@@ -1,0 +1,14 @@
+@use '../../styles/colors';
+
+.primary-button {
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: colors.$color-orange;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}

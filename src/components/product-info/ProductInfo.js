@@ -1,6 +1,8 @@
 import './product-info.scss';
 
 import QuantityButton from '../quantityButton/QuantityButton';
+import PrimaryButton from '../primaryButton/PrimaryButton';
+import { ReactComponent as CartIcon } from '../../images/icon-cart-white.svg';
 
 const ProductInfo = () => (
   <section className="product-info">
@@ -19,7 +21,9 @@ const ProductInfo = () => (
       <span className="product-info__price-old">$250.00</span>
     </div>
     <QuantityButton />
-    <button className="product-info__add-btn">Add to cart</button>
+    <PrimaryButton>
+      <CartIcon /> Add to Cart
+    </PrimaryButton>
   </section>
 );
 
