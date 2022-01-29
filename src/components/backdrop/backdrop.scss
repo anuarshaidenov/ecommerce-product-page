@@ -6,4 +6,8 @@
   height: 100%;
   background-color: rgba($color: #000000, $alpha: 0.5);
   z-index: 4;
+
+  &--cart {
+    background-color: transparent;
+  }
 }

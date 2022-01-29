@@ -1,0 +1,43 @@
+@use '../../styles/colors';
+
+.cart-modal {
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  transform: translateX(-50%);
+  width: 95%;
+  min-height: 10rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 5;
+
+  &__title {
+    display: block;
+    position: relative;
+    padding: 0 0 1rem 0;
+    font-weight: 700;
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      content: '';
+      width: 110%;
+      height: 1px;
+      background-color: colors.$color-light-grayish-blue;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 8rem;
+  }
+
+  &__message {
+    color: colors.$color-dark-grayish-blue;
+  }
+}
