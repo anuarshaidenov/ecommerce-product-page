@@ -28,7 +28,7 @@ const ProductInfo = () => {
   const handleIncrementQuantity = () =>
     setItem({ ...item, quantity: item.quantity + 1 });
   const handleDecrementQuantity = () =>
-    setItem({ ...item, quantity: item.quantity - 1 });
+    setItem({ ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 });
 
   return (
     <section className="product-info container">

@@ -1,6 +1,5 @@
-import image from '../../images/image-product-1-thumbnail.jpg';
-
-const ADD_ITEM = 'cart/addBook';
+const ADD_ITEM = 'cart/addCartItem';
+const REMOVE_ITEM = 'cart/removeCartItem';
 
 const initialState = [];
 
@@ -9,10 +8,17 @@ export const addItemToCart = (payload) => ({
   payload,
 });
 
+export const removeItemFromCart = (payload) => ({
+  type: REMOVE_ITEM,
+  payload,
+});
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ITEM:
       return [...state, action.payload];
+    case REMOVE_ITEM:
+      return state.filter((item) => item.id !== action.payload);
     default:
       return state;
   }
