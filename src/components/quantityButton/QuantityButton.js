@@ -2,13 +2,25 @@ import './quantity-button.scss';
 import { ReactComponent as DecrementIcon } from '../../images/icon-minus.svg';
 import { ReactComponent as IncrementIcon } from '../../images/icon-plus.svg';
 
-const QuantityButton = () => (
+const QuantityButton = ({
+  quantity,
+  handleIncrementQuantity,
+  handleDecrementQuantity,
+}) => (
   <div className="quantity-button">
-    <button type="button" className="quantity-button__decrement">
+    <button
+      type="button"
+      className="quantity-button__decrement"
+      onClick={handleDecrementQuantity}
+    >
       <DecrementIcon />
     </button>
-    <span className="quantity-button__amount">3</span>
-    <button type="button" className="quantity-button__increment">
+    <span className="quantity-button__amount">{quantity}</span>
+    <button
+      type="button"
+      className="quantity-button__increment"
+      onClick={handleIncrementQuantity}
+    >
       <IncrementIcon />
     </button>
   </div>

@@ -2,29 +2,7 @@ import image from '../../images/image-product-1-thumbnail.jpg';
 
 const ADD_ITEM = 'cart/addBook';
 
-const initialState = [
-  {
-    id: '111',
-    title: 'shoe',
-    quantity: 1,
-    price: 125,
-    imageUrl: image,
-  },
-  {
-    id: '222',
-    title: 'shoe nike yeezy and that',
-    quantity: 1,
-    price: 125,
-    imageUrl: image,
-  },
-  {
-    id: '1211',
-    title: 'shoe',
-    quantity: 1,
-    price: 125,
-    imageUrl: image,
-  },
-];
+const initialState = [];
 
 export const addItemToCart = (payload) => ({
   type: ADD_ITEM,

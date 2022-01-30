@@ -10,7 +10,9 @@ const CartItem = ({ cartItem }) => (
       <span className="cart-item__price-singular">
         ${cartItem.price} x {cartItem.quantity}
       </span>
-      <span className="cart-item__price-total">$375</span>
+      <span className="cart-item__price-total">
+        ${cartItem.price * cartItem.quantity}
+      </span>
     </div>
     <TrashLogo />
   </li>
