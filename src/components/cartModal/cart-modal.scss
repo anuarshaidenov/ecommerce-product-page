@@ -7,7 +7,7 @@
   transform: translateX(-50%);
   width: 95%;
   min-height: 10rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #fff;
   border-radius: 10px;
   z-index: 5;
@@ -32,6 +32,8 @@
 
   &__items {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     min-height: 8rem;
@@ -39,5 +41,10 @@
 
   &__message {
     color: colors.$color-dark-grayish-blue;
+  }
+
+  &__button {
+    align-self: stretch;
+    box-shadow: none !important;
   }
 }

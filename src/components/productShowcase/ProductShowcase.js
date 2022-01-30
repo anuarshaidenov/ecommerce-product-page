@@ -6,7 +6,7 @@ import { images } from './productImages';
 const ProductShowcase = () => (
   <Carousel showStatus={false} showIndicators={false} showThumbs={false}>
     {images.map((image) => (
-      <div className="product-showcase__image-container">
+      <div key={1} className="product-showcase__image-container">
         <img alt="product" src={image} />
       </div>
     ))}

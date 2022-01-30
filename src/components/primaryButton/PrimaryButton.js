@@ -1,7 +1,7 @@
 import './primary-button.scss';
 
-const PrimaryButton = ({ children, ...otherProps }) => (
-  <button className="primary-button" {...otherProps}>
+const PrimaryButton = ({ children, className, ...otherProps }) => (
+  <button className={`primary-button ${className || ''}`} {...otherProps}>
     {children}
   </button>
 );
