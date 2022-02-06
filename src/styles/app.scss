@@ -37,12 +37,35 @@ ul {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+
+  &--small {
+    max-width: 1000px;
+  }
 }
 
 .main {
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 700px) {
+    padding: 5rem 0;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  @media (min-width: 1000px) {
+    gap: 5rem;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 10rem;
+  }
+
+  &.container {
+    width: 100%;
+  }
 }
 
 .no-scroll {

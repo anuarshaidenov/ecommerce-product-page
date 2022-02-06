@@ -1,0 +1,25 @@
+@use '../../styles/colors';
+
+.product-showcase-desktop {
+  display: none;
+  flex: 1;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+}
+
+.carousel-slider {
+  @media (min-width: 700px) {
+    border-radius: 30px;
+  }
+}
+
+.thumb {
+  border-radius: 20px;
+
+  &.selected {
+    border: 3px solid colors.$color-orange !important;
+    opacity: 0.5;
+  }
+}

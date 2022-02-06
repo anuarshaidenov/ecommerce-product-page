@@ -6,6 +6,20 @@
   flex-direction: column;
   gap: 1rem;
 
+  @media (min-width: 700px) {
+    padding: 0;
+    width: 50%;
+    flex: 1;
+  }
+
+  &.container {
+    @media (min-width: 700px) {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+  }
+
   &__company {
     font-size: 0.8rem;
     color: colors.$color-orange;

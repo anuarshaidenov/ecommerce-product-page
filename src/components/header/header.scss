@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (min-width: 700px) {
+    border-bottom: 1px solid colors.$color-light-grayish-blue;
+  }
+
   &__button-hamburger {
     transform: translateY(3px);
 
