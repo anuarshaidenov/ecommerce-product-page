@@ -65,6 +65,10 @@ ul {
 
   &.container {
     width: 100%;
+
+    @media (min-width: 700px) {
+      width: 95%;
+    }
   }
 }
 
