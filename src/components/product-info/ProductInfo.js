@@ -46,14 +46,21 @@ const ProductInfo = () => {
         </div>
         <span className="product-info__price-old">${item.oldPrice}.00</span>
       </div>
-      <QuantityButton
-        quantity={item.quantity}
-        handleIncrementQuantity={handleIncrementQuantity}
-        handleDecrementQuantity={handleDecrementQuantity}
-      />
-      <PrimaryButton type="button" onClick={addItemToCartHandler}>
-        <CartIcon /> Add to Cart
-      </PrimaryButton>
+      <div className="product-info__buttons">
+        <QuantityButton
+          quantity={item.quantity}
+          handleIncrementQuantity={handleIncrementQuantity}
+          handleDecrementQuantity={handleDecrementQuantity}
+          className="product-info__quantity-button"
+        />
+        <PrimaryButton
+          className="product-info__primary-button"
+          type="button"
+          onClick={addItemToCartHandler}
+        >
+          <CartIcon /> Add to Cart
+        </PrimaryButton>
+      </div>
       <span
         className={`product-info__success-message ${
           successMessage ? 'product-info__success-message--show' : ''

@@ -6,8 +6,9 @@ const QuantityButton = ({
   quantity,
   handleIncrementQuantity,
   handleDecrementQuantity,
+  className,
 }) => (
-  <div className="quantity-button">
+  <div className={`quantity-button ${className ? className : ''}`}>
     <button
       type="button"
       className="quantity-button__decrement"
