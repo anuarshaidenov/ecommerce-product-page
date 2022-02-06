@@ -9,6 +9,10 @@
   padding: 1.5rem;
   transition: all 0.3s ease-in-out;
 
+  @media (min-width: 700px) {
+    display: none;
+  }
+
   &--translated {
     transform: translateX(-110%);
   }

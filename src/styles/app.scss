@@ -41,8 +41,14 @@ ul {
 
 .main {
   padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .no-scroll {
   position: fixed;
+
+  @media (min-width: 700px) {
+    position: inherit;
+  }
 }

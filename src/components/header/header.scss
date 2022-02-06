@@ -1,3 +1,5 @@
+@use '../../styles/colors';
+
 .header {
   padding: 1.5rem 0;
   display: flex;
@@ -6,6 +8,28 @@
 
   &__button-hamburger {
     transform: translateY(3px);
+
+    @media (min-width: 700px) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media (min-width: 700px) {
+      display: block;
+    }
+  }
+
+  &__nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__nav-link {
+    color: colors.$color-dark-grayish-blue;
   }
 
   &__left,
@@ -13,9 +37,17 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @media (min-width: 700px) {
+      gap: 3rem;
+    }
   }
 
   &__avatar {
     max-width: 25px;
+
+    @media (min-width: 700px) {
+      max-width: 45px;
+    }
   }
 }

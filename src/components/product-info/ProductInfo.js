@@ -20,11 +20,15 @@ const ProductInfo = () => {
     description:
       'These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they will withstand everything the weather can offer.',
   });
+  const [successMessage, setSuccessMessage] = useState(false);
 
   const dispatch = useDispatch();
 
-  const addItemToCartHandler = () =>
+  const addItemToCartHandler = () => {
     dispatch(addItemToCart({ ...item, id: uuidv4() }));
+    setSuccessMessage(true);
+    setTimeout(() => setSuccessMessage(false), 2000);
+  };
   const handleIncrementQuantity = () =>
     setItem({ ...item, quantity: item.quantity + 1 });
   const handleDecrementQuantity = () =>
@@ -50,6 +54,13 @@ const ProductInfo = () => {
       <PrimaryButton type="button" onClick={addItemToCartHandler}>
         <CartIcon /> Add to Cart
       </PrimaryButton>
+      <span
+        className={`product-info__success-message ${
+          successMessage ? 'product-info__success-message--show' : ''
+        }`}
+      >
+        Item added!
+      </span>
     </section>
   );
 };

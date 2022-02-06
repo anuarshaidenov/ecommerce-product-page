@@ -7,6 +7,10 @@
   background-color: rgba($color: #000000, $alpha: 0.5);
   z-index: 4;
 
+  @media (min-width: 700px) {
+    display: none;
+  }
+
   &--cart {
     background-color: transparent;
   }

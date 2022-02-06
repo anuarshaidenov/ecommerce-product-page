@@ -30,6 +30,15 @@ const Header = () => {
           <HamburgerIcon className="header__hamburger" />
         </button>
         <Logo className="header__logo" />
+        <nav className="header__nav">
+          <ul className="header__nav-links">
+            <li className="header__nav-link">Collections</li>
+            <li className="header__nav-link">Men</li>
+            <li className="header__nav-link">Women</li>
+            <li className="header__nav-link">About</li>
+            <li className="header__nav-link">Contact</li>
+          </ul>
+        </nav>
       </div>
       <div className="header__right">
         <button className="header__button-cart" onClick={toggleCart}>

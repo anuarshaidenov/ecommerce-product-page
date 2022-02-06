@@ -53,4 +53,18 @@
     text-decoration: line-through;
     color: colors.$color-grayish-blue;
   }
+
+  &__success-message {
+    margin-top: 1rem;
+    text-align: center;
+    color: colors.$color-orange;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.3s;
+
+    &--show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
