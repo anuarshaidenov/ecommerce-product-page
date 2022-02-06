@@ -15,7 +15,18 @@
   }
 }
 
+.thumbs-wrapper {
+  margin: 0 !important;
+  margin-top: 20px !important;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+
 .thumb {
+  width: 100px !important;
   border-radius: 20px;
   cursor: pointer;
   border: none !important;
