@@ -11,6 +11,14 @@
   background-color: #fff;
   border-radius: 10px;
   z-index: 5;
+  box-shadow: 0px 14px 35px -10px rgba(0, 0, 0, 0.75);
+
+  @media (min-width: 700px) {
+    left: auto;
+    transform: none;
+    right: 0;
+    max-width: 350px;
+  }
 
   &__title {
     display: block;

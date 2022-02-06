@@ -17,6 +17,7 @@
 
 .thumb {
   border-radius: 20px;
+  cursor: pointer;
 
   &.selected {
     border: 3px solid colors.$color-orange !important;
