@@ -18,6 +18,12 @@
 .thumb {
   border-radius: 20px;
   cursor: pointer;
+  border: none !important;
+
+  &:hover {
+    opacity: 0.5;
+    transform: none !important;
+  }
 
   &.selected {
     border: 3px solid colors.$color-orange !important;

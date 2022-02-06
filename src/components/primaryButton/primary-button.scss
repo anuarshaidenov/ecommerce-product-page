@@ -12,4 +12,9 @@
   justify-content: center;
   gap: 0.8rem;
   box-shadow: -2px 24px 43px -19px colors.$color-orange;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
